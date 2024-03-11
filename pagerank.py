@@ -170,7 +170,7 @@ def iterate_pagerank(corpus, damping_factor):
         # Find max change in page rank:
         for page_name in corpus:
             rank_change = abs(page_ranks[page_name] - new_ranks[page_name])
-            print(f"max: {max_rank_change}", f" rank: {rank_change}");
+            # print(f"max: {max_rank_change}", f" rank: {rank_change}");
             if rank_change > max_rank_change:
                 max_rank_change = rank_change
 
